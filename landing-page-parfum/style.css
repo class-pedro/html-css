@@ -1,0 +1,87 @@
+:root{
+    --cor1-: #793f1e80;
+    --cor-background: #ffebd3;
+    --cor-background2: #fff7ec;
+    --cor-text: #3d2212;
+    --cor-button: #e08113;
+    --cor-title: #7e401a;
+    --font-title: 'Fraunces', sans-serif;
+    --font-texts: 'Montserrat', sans-serif;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: var(--cor-background);
+}
+main {
+    margin-top: 175px;
+    margin-bottom: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perfume img{
+    border-radius: 15px 0 0 15px;
+    width: 300px;
+    height: 450px;
+}
+.conteudo{
+    background-color: var(--cor-background2);
+    width: 410px;
+    height: 613px;
+    border-radius: 0 15px 15px 0;
+    display: block;
+    width: 300px;
+    height: 450px;
+}
+.separate-img{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h1{
+    color: var(--cor-title);
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+.pre-title{
+    text-transform: uppercase;
+    color: var(--cor1-);
+}
+p{
+    color: var(--cor-text);
+    font-family: var(--font-texts);
+    font-weight: 500;
+    font-size: 14px;
+}
+strong{
+    text-transform: uppercase;
+}
+.preco{
+    display: flex;
+    align-items: center;
+}
+h2{
+    color: var(--cor-button);
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+.preco > p {
+    color: #2c180db2;
+    text-decoration: line-through;
+    font-family: var(--font-texts);
+    font-weight: 500;
+    margin-left: 15px;
+}
+button{
+    background-color: var(--cor-button);
+    border-radius: 10px;
+    color: var(--cor-background2);
+    border: none;
+    width: 236px;
+    height: 48px;
+    font-family: var(--font-texts);
+    font-weight: 700;
+    font-size: 14px;
+}
