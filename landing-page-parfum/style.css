@@ -9,18 +9,21 @@
     --font-texts: 'Montserrat', sans-serif;
 }
 *{
-    margin:0;
     padding: 0;
 }
 body{
     background: var(--cor-background);
-}
-main {
-    margin-top: 175px;
-    margin-bottom: 175px;
+    height: 800px;
+    width: 100%;
+    margin: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 600px;
+    height: 450px;
+    display: flex;
 }
 .perfume img{
     border-radius: 15px 0 0 15px;
@@ -30,7 +33,7 @@ main {
 .conteudo{
     background-color: var(--cor-background2);
     width: 410px;
-    height: 613px;
+    height: 600px;
     border-radius: 0 15px 15px 0;
     display: block;
     width: 300px;
