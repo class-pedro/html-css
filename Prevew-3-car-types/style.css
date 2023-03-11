@@ -1,0 +1,110 @@
+:root{
+    
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+
+/*paragraphs*/
+--transparent-white: hsla(0, 0%, 100%, 0.75);
+
+/*background, headings, buttons*/
+--very-light-gray: hsl(0, 0%, 95%);
+
+/*Fonts (size: 15px)*/
+--font-paragraphs: 'Lexend Deca', sans-serif;
+--font-titles: 'Big Shoulders Display', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--transparent-white);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+ }
+section{
+    height: 494px;
+    width: 304px;
+}
+h1{
+    text-transform: uppercase;
+    font-family: var(--font-titles);
+    font-weight: 700;
+    color: var(--transparent-white);
+    font-size: 35px;
+    margin-top: 47px;
+    margin-bottom: 32.9px;
+}
+p{
+    font-family: var(--font-paragraphs);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--transparent-white);
+    margin-bottom: 89.3px;
+}
+.icons{
+    margin-top: 47px;
+    width: 4rem;
+    height: 2.5rem;
+
+}
+.sedans{
+    background-color: var(--bright-orange);
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+.suvs{
+    background-color: var(--dark-cyan);
+}
+.luxury{
+    background-color: var(--very-dark-cyan);
+    border: none;
+    border-radius: 0 20px 20px 0;
+}
+.button-sedan{
+    font-family: var(--font-paragraphs);
+    background-color: var(--transparent-white);
+    color: var(--bright-orange);
+    border: none;
+    border-radius: 30px;
+    width: 150.4px;
+    height: 47px;
+    margin: 0;
+}
+.button-suv{
+    font-family: var(--font-paragraphs);
+    background-color: var(--transparent-white);
+    color: var(--dark-cyan);
+    border: none;
+    border-radius: 30px;
+    width: 150.4px;
+    height: 47px;
+    margin: 0;
+}
+.button-luxury{
+    font-family: var(--font-paragraphs);
+    background-color: var(--transparent-white);
+    color: var(--very-dark-cyan);
+    border: none;
+    border-radius: 30px;
+    width: 150.4px;
+    height: 47px;
+    margin: 0;
+}
+.distances{
+    margin-left: 47px;
+    margin-right: 47px;
+}
+button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.096);*/
+}
