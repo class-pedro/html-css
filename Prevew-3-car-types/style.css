@@ -6,6 +6,7 @@
 
 /*Paragraphs*/
 --transparent-white: hsla(0, 0%, 100%, 0.75);
+--titles-color: #ffffffd8;
 
 /*background, headings, buttons*/
 --very-light-gray: hsl(0, 0%, 95%);
@@ -38,7 +39,7 @@ h1{
     text-transform: uppercase;
     font-family: var(--font-titles);
     font-weight: 700;
-    color: var(--transparent-white);
+    color: var(--titles-color);
     font-size: 35px;
     margin-top: 47px;
     margin-bottom: 32.9px;
@@ -72,7 +73,8 @@ p{
 }
 .button-sedan{
     font-family: var(--font-paragraphs);
-    background-color: var(--transparent-white);
+    font-weight: 400;
+    background-color:var(--titles-color);
     color: var(--bright-orange);
     border: none;
     border-radius: 30px;
@@ -82,7 +84,8 @@ p{
 }
 .button-suv{
     font-family: var(--font-paragraphs);
-    background-color: var(--transparent-white);
+    font-weight: 400;
+    background-color:var(--titles-color);
     color: var(--dark-cyan);
     border: none;
     border-radius: 30px;
@@ -92,7 +95,8 @@ p{
 }
 .button-luxury{
     font-family: var(--font-paragraphs);
-    background-color: var(--transparent-white);
+    font-weight: 400;
+    background-color:var(--titles-color);
     color: var(--very-dark-cyan);
     border: none;
     border-radius: 30px;
@@ -108,4 +112,43 @@ button:hover{
     cursor: pointer;
     text-decoration: underline;
     /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.096);*/
+}
+@media (max-width: 620px)
+{
+    body{
+        height: 100%;
+    }
+    main{
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+    section{
+        height: 400px;
+    }
+    h1{
+        font-size: 60px;
+        margin: 30px;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    .sedans{
+        background-color: var(--bright-orange);
+        border: none;
+        border-radius: 20px 20px 0 0;
+        width: 80vw;
+    }
+    .suvs{
+        background-color: var(--dark-cyan);
+        width: 80vw;
+    }
+    .luxury{
+        background-color: var(--very-dark-cyan);
+        border: none;
+        border-radius: 0 0 20px 20px;
+        width: 80vw;
+    }
+    .icons{
+        margin-top: 30px;
+    }
 }
