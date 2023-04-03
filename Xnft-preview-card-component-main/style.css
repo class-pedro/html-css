@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+:root{
+    --card:#16263f;
+    --up-gradient:#0d1a2d;
+    --low-gradient:#0c192c;
+    --the-coins:#1cfffa;
+    --title:#fbffff;
+    --paragrafo:#7a8fac;
+
+    --font-outfit: 'Outfit', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    background-image: linear-gradient(#0d1a2d, #0c192c);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 325px;
+    height: 540px;
+    background-color: var(--card);
+    border-radius: 10px;
+}
+h1, p{
+    font-family: var(--font-outfit);
+}
+div.img > a > img{
+    width: 280px;
+    height: 280px;
+    margin: 22.5px 22.5px 30px 22.5px;
+    border-radius: 10px;
+}
+div.info{
+    margin: 0 22.5px 15px 22.5px;
+    padding-bottom: 15px;
+    border-bottom: solid .3px #7a8fac;
+}
+h1{
+    color: var(--title);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+p.par-one{
+    color: var(--paragrafo);
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+div.value-date{
+    display: flex;
+    justify-content: space-between;
+}
+div.etherum{
+    display: flex;
+    align-items: center;
+}
+div.etherum > img{
+    margin-right: 5px;
+}
+div.relogio{
+    display: flex;
+    align-items: center;
+}
+div.relogio > img{
+    margin-right: 5px;
+}
+p.par-dois{
+    color: var(--the-coins);
+    font-weight: 700;
+}
+p.par-tres{
+    color: var(--paragrafo);
+    font-weight: 400;
+}
+div.credit{
+    margin: 0 22.5px 22.5px 22.5px;
+    display: flex;
+    align-items: center;
+}
+p.par-quatro{
+    color: var(--paragrafo);
+    font-weight: 300px;
+}
+img.jules{
+    height: 20px;
+    width: 20px;
+    border: solid 1px var(--title);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+span{
+    color: var(--title);
+}
+a{
+    text-decoration: none;
+    color: var(--title);
+}
+a:hover{
+    color: var(--the-coins);
+}
