@@ -13,3 +13,7 @@
  <a href='https://class-pedro.github.io/html-css/qr-code-component-main/'>Abrir Página com QR Code</a>
 
  <a href='https://class-pedro.github.io/html-css/results-summary-component-main/'>Abrir Sumário de Resultados</a>
+
+ <a href='https://class-pedro.github.io/html-css/single-price-grid-component-master/'>Abrir Landing Page de Adesão à Comunidade</a>
+
+ <a href='https://class-pedro.github.io/html-css/testimonials-grid-section-main/'>Abrir Página de Depoimentos</a>
