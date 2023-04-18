@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+:root{
+    /*## Colors*/
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    /*Font*/
+    --font-barlow: 'Barlow Semi Condensed', sans-serif;
+    /*- Weights: 500, 600, Size 13px*/
+
+    /*Design:
+    - Mobile: 375px
+    - Desktop: 1440px*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-barlow);
+}
+
+body{
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    margin: 40px 0 20px 0;
+}
+
+.margin-left-global{
+    margin-left: 34px;
+}
+
+.margin-top-global{
+    margin-top: 20px;
+}
+
+div#container-globals{
+    max-width: 375px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.13);
+}
+
+div#container-globals > h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+
+div#container-globals > h1#title-black{
+    color: var(--very-dark-grayish-blue);
+}
+
+div#container-globals > p#paragraph-black{
+    color: hsla(217, 19%, 35%, 0.705);
+}
+
+div#container-globals > p{
+    font-size: 1em;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.501);
+    padding-bottom: 34px;
+}
+
+div#card-people{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+img#img-white{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.392);
+}
+
+img#img-black{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid rgba(0, 0, 0, 0.136);
+}
+
+div#name-and-cargo > h1{
+    font-size: .9em;
+    font-weight: 600;
+    color: var(--white);
+}
+
+div#name-and-cargo > h1#name-black{
+    font-size: .9em;
+    font-weight: 600;
+    color: hsla(217, 19%, 35%, 0.975);
+}
+
+div#name-and-cargo > h2#cargo-black{
+    font-size: .9em;
+    font-weight: 600;
+    color: hsla(217, 19%, 35%, 0.584);
+}
+
+div#name-and-cargo > h2{
+    font-size: .85em;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.501);
+}
+
+div.daniel{
+    background: var(--moderate-violet) url(images/bg-pattern-quotation.svg) no-repeat top right 40px;
+}
+
+div.daniel > h1{
+    margin-right: 27px;
+}
+
+div.daniel > p{
+    margin-right: 35px;
+    line-height: 20px;
+}
+
+div.jonathan{
+    background-color: var(--very-dark-grayish-blue);
+}
+
+div.jonathan > h1{
+    margin-right: 27px;
+}
+
+div.jonathan > p{
+    margin-right: 20px;
+    line-height: 20px;
+}
+
+div.janette{
+    background-color: var(--white);
+}
+
+div.janette > h1{
+    margin-right: 27px;
+}
+
+div.janette > p{
+    margin-right: 20px;
+    line-height: 20px;
+}
+
+div.patrick{
+    background-color: var(--very-dark-blackish-blue);
+}
+
+div.patrick > h1{
+    margin-right: 27px;
+}
+
+div.patrick > p{
+    margin-right: 30px;
+    line-height: 20px;
+}
+
+div.kira{
+    background-color: var(--white);
+}
+
+div.kira > h1{
+    margin-right: 27px;
+}
+
+div.kira > p{
+    margin-right: 20px;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 640px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+        width: 1182px;
+        height: 612px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "daniel daniel jonathan kira"
+        "janette patrick patrick kira";
+    }
+    div#container-globals{
+        max-width: 540px;
+        margin: 15px;
+    }
+    div#container-globals > h1{
+        font-size: 1.27em;
+    }
+    div#container-globals > p{
+        font-size: .82em;
+        margin-top: 15px;
+        line-height: 17px;
+    }
+    div.daniel{
+        background: var(--moderate-violet) url(images/bg-pattern-quotation.svg) no-repeat top right 85px;
+        grid-area: daniel;
+        width: 540px;
+        height: 280px;
+    }
+    div.jonathan{
+        grid-area: jonathan;
+        width: 252px;
+        height: 280px;
+    }
+    div.janette{
+        grid-area: janette;
+        width: 252px;
+        height: 272px;
+    }
+    div.patrick{
+        grid-area: patrick;
+        width: 540px;
+        height: 272px;
+    }
+    div.kira{
+        grid-area: kira;
+        width: 255px;
+        height: 582px;
+    }
+}
