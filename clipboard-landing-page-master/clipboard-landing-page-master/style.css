@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+:root{
+/*    ## Colors
+
+### Primary*/
+
+--strongCyan: hsl(171, 66%, 44%);
+--lightBlue: hsl(233, 100%, 69%);
+
+/*### Neutral*/
+
+--darkGrayishBlue: hsl(210, 10%, 33%);
+--grayish-blue: hsl(201, 11%, 66%);
+
+--font: 'Bai Jamjuree', sans-serif; /*wheights 400 e 600*/
+}
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    max-width: 375px;
+    font-family: var(--font);
+    background-color: white;
+ }
+ h1, h2{
+    color: var(--darkGrayishBlue);
+    font: 600 1.125em;
+    text-align: center;
+ }
+ p{
+    font-weight: 600;
+    font-size: .97em;
+    text-align: center;
+    color: var(--grayish-blue);
+    line-height: 27px;
+ }
+ button{
+    width: 313px;
+    height: 58px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-family: var(--font);
+    font-size: 1em;
+    font-weight: 600;
+    display: block;
+    margin: auto;
+ }
+ header, section, footer{
+   width: 311px;
+   padding: 0 32px 0 32px;
+ }
+ button.BgAquaBlue{
+    background-color: var(--strongCyan);
+    box-shadow: 0px 4px 0px  hsl(171, 66%, 39%);
+ }
+ button.BgPurple{
+    background-color: var(--lightBlue);
+    box-shadow: 0px 4px 0px hsl(233, 64%, 59%);
+ }
+ img{
+    display: block;
+    margin: auto;
+ }
+ header.historyContainer > img{
+    width: 128px;
+    height: 128px;
+    padding-top: 120px;
+ }
+ header.historyContainer > h1{
+   margin-top: 73px;
+ }
+ header.historyContainer > p{
+   margin-top: 25px;
+ }
+ div.buttons > button.butIos1{
+   margin-top: 51px;
+ }
+ div.buttons > button.butMac1{
+   margin-top: 25px;
+ }
+ header{
+   background-image: url(images/bg-header-mobile.png);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-attachment: cover;
+}
+ section.snippetsContainer > h1{
+   margin-top: 168px;
+ }
+ section.snippetsContainer > .parOne{
+   margin-top: 26px;
+ }
+ section.snippetsContainer > div.configureDescription > div.legend h2{
+   margin-top: 60px;
+ }
+ section.snippetsContainer > div.configureDescription > p{
+   margin-top: 23px;
+ }
+ section.snippetsContainer > div.configureDescription > img {
+    width: 313px;   
+    height: 240px;
+    margin-top: 69px;
+ }
+
+ section.clipboardContainer > h1{
+   margin-top: 198px;
+ }
+ section.clipboardContainer > .parOne{
+   margin-top: 26px;
+ }
+ section.clipboardContainer > img.imgTabletAndPhone {
+   margin-top: 70px;
+    width: 313px;
+    height: 183px;
+ }
+ section.clipboardContainer > img.iconBacklist {
+    width: 44px;
+    height: 42px;
+ }
+ section.clipboardContainer > img.iconText {
+    width: 35px;
+    height: 34px;
+ }
+ section.clipboardContainer > img.iconPreview {
+    width: 50px;
+    height: 33px;
+ }
+ section.clipboardContainer > h2.supercharge{
+   margin-top: 140px;
+ }
+ section.clipboardContainer >  div.functions > div.theFunctions> h2{
+   margin-top: 47px;
+ }
+ section.clipboardContainer  div.functions > div.theFunctions > p{
+   margin-top: 27px;
+ }
+ section.clipboardContainer >div.functions > div.theFunctions > img.iconBacklist{
+   margin-top: 99px;
+ }
+ section.clipboardContainer > div.functions > div.theFunctions > img.iconText{
+   margin-top: 62px;
+ }
+ section.clipboardContainer > div.functions > div.theFunctions > img.iconPreview{
+   margin-top: 64px;
+ } 
+
+ section.enterprisesLogos > img.googleLogo{
+   margin-top: 140px;
+}
+section.enterprisesLogos > img.ibmLogo{
+   margin-top: 68px;
+}
+section.enterprisesLogos > img.microsoftLogo{
+   margin-top: 72px;
+}
+section.enterprisesLogos > img.hewlettLogo{
+   margin-top: 63px;
+}
+section.enterprisesLogos > img.vectorGraphicsLogo{
+   margin-top: 57px;
+}
+
+section.macIosContainer > h1{
+   margin-top: 178px;
+}
+section.macIosContainer > p{
+   margin-top: 33px;
+}
+section.macIosContainer > div.buttons > button.butIos2{
+   margin-top: 52px;
+}
+section.macIosContainer > div.buttons > button.butMac2{
+   margin: 23px 0 169px 0;
+}
+
+footer {
+    background-color: #f5f6f8;
+}
+ footer > img{
+    padding-top: 53px;
+    width: 57px;
+    height: 57px;
+}
+footer > div.footerLinks{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+div.faqContactUs > a, div.privacyPress > a, div.install > a{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-decoration: none;
+   font: 600 1.25em var(--font);
+   color: var(--grayish-blue);
+   margin-top: 30px;
+}
+div.iconsSocialMedias{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 0px 79px;
+   padding: 55px 0;
+}
+button:hover{
+   cursor: pointer;
+}
+ button.BgAquaBlue:hover{
+    background-color: hsl(171, 66%, 39%);
+    box-shadow: 0px 4px 0px  hsl(171, 65%, 36%);
+ }
+ button.BgPurple:hover{
+    background-color: hsl(233, 64%, 59%);
+    box-shadow: 0px 4px 0px hsl(233, 53%, 54%);
+ }
+a:hover{
+   cursor: pointer;
+}
+div.footerLinks > a:hover{
+   text-decoration: underline;
+}
+
+@media screen and (min-width: 376px){
+   body{
+      max-width: 1440px;
+   }
+   button{
+      width: 228px;
+      height: 60px;
+      margin: 0;
+   }
+   header{
+      margin: 0;
+      background-image: url(images/bg-header-desktop.png);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   header > img {
+      margin: 0 auto;
+   }
+   header, section, footer{
+     width: 98.9vw;
+     padding: 0;
+   }
+   p.description{
+      margin: 40px 374px 0 374px;
+   }
+   header > div.buttons > button{
+      margin:0;
+   }
+   div.buttons{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+   }
+       div.buttons > button.butIos1{
+      margin-top: 0px;
+      margin-right: 8px;
+   }
+    div.buttons > button.butMac1{
+      margin-top: 0px;
+      margin-left: 8px;
+   }
+   section.snippetsContainer > div.configureDescription > div.legend{
+      margin-top: 95px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   section.snippetsContainer > div.configureDescription > div.legend > p{
+      text-align: left;
+      margin-bottom: 0px;
+      margin-top: 25px;
+      margin-right: 275px;
+   }
+   section.snippetsContainer > div.configureDescription{
+      display: flex;
+      position: absolute;
+   }
+   section.snippetsContainer > div.configureDescription > img {
+      width: 752px;   
+      height: 572px;
+      position: relative;
+      translate: -7%;
+   }
+   section.clipboardContainer{
+      margin-top: 844px;
+   }
+
+   section.clipboardContainer > img.imgTabletAndPhone {
+      margin-top: 70px;
+       width: 905px;
+       height: 575px;
+    }
+    section.clipboardContainer > h2.supercharge{
+      margin-top: 45px;
+    }
+    section.clipboardContainer >div.functions > div.theFunctions > img.iconBacklist{
+      margin-top: 80px;
+    }
+    section.clipboardContainer > div.functions > div.theFunctions > img.iconText{
+      margin-top: 80px;
+    }
+    section.clipboardContainer > div.functions > div.theFunctions > img.iconPreview{
+      margin-top: 80px;
+    } 
+   div.functions{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+   }
+   div.functions > div.theFunctions{
+      width: 340px;
+   }
+   div.theText{
+      margin-right: 40px;
+      margin-left: 40px;
+   }
+   section.enterprisesLogos{
+      display: flex;
+      flex-direction: row;
+
+   }
+   section.enterprisesLogos > img.googleLogo, section.enterprisesLogos > img.ibmLogo, section.enterprisesLogos > img.microsoftLogo, section.enterprisesLogos > img.hewlettLogo, section.enterprisesLogos > img.vectorGraphicsLogo{
+      margin-top: 164px;
+   }
+   section.enterprisesLogos > img.googleLogo{
+      margin-left: 164px;
+   }
+   section.enterprisesLogos > img.vectorGraphicsLogo{
+      margin-right: 164px;
+   }
+   section.macIosContainer > div.buttons > button.butIos2{
+      margin: 0px 8px 0 0;
+   }
+   section.macIosContainer > div.buttons > button.butMac2{
+      margin: 0px 0 8px 0;
+   }
+   section.macIosContainer > div.buttons{
+      display: flex;
+   }
+   section.macIosContainer {
+      margin-bottom: 100px;
+   }
+   
+   footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+   }
+   footer > img {
+      padding: 0;
+      margin: 0;
+   }
+   footer > div.footerLinks{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      height: 109.6px;
+   }
+   div.faqContactUs{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-right: 40px;
+   }
+   div.privacyPress{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-right: 40px;
+   }
+   div.install{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 64.6px;
+      margin-right: 100px;
+   }
+   div.iconsSocialMedias{
+      padding: 0;
+      margin: 0;
+   }
+   div.iconsSocialMedias > a {
+      padding: 0;
+      margin: 0;
+   }
+   div.iconsSocialMedias > a > img {
+      margin-right: 30px;
+      padding: 0;
+   }
+   div.faqContactUs > a, div.privacyPress > a, div.install > a{
+      margin-top: 0px;
+   }
+   #contactUs, #press {
+      margin-top: 15px;
+   }
+   #faq:hover, #privacy:hover, #contactUs:hover, #press:hover, #install:hover{
+      text-decoration: underline;
+   }
+}
